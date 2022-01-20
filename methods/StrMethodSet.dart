@@ -22,6 +22,6 @@ class StrMethodSet {
         }
       }
     }
-    return 'Строка с цифрами и словами: $strArr, резултат:$set';
+    return 'Строка с цифрами и словами: $strArr, результат:$set';
   }
 }
