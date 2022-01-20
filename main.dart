@@ -30,14 +30,10 @@ void main() {
       'one, two, cat, three, dog, four, three, big, seven, true, two'));
   print('');
 
-  print('#НЕДОДЕЛАНО');
   print('6 Задание');
   print('Решение с именованным конструктором');
   Point zero = Point.search(4, 3, 9);
   print(zero.distanceTo());
-  print('Решение с factory конструктором');
-  // Point one = Point.first(4, 3, 9);
-  // print(one.distanceTo());
   print('');
 
   print('7 Задание');
