@@ -1,7 +1,7 @@
 import 'dart:math';
 
 class Point {
-  late double ax;
+  double ax;
   double ay;
   double az;
   final bx = 5;
@@ -14,10 +14,10 @@ class Point {
     this.az = az;
   }
 
-  factory Point.first(ax, ay, az) {
-    final str = 'hello';
-    return Point.search(ax, ay, az);
+  factory Point.begin(ax, ay, az) {
+    return Point.search(0, 0, 0);
   }
+
   distanceTo() {
     final sum = sqrt(pow(bx - ax, 2) + pow(by - ay, 2) + pow(bz - az, 2));
     return sum;
