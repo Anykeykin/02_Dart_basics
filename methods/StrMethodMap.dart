@@ -1,12 +1,13 @@
 class StrMethodMap {
-  final strArr = [];
   final map = {};
 
   mapHelper(strArr) {
-    for (int elem = 0; elem < strArr.length; elem++) {
-      map[elem] = strArr[elem];
-    }
-
+    Map<String, int> map = Map.fromIterable(strArr,
+        key: (k) => k, value: (v) => countEntrance(strArr, v));
     return 'Массив строки: $strArr, Коллекция: $map';
+  }
+
+  countEntrance(strArr, el) {
+    return strArr.where((item) => item == el).length;
   }
 }
