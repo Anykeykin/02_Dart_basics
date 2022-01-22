@@ -22,7 +22,15 @@ void main() {
   print('');
 
   print('4 Задание');
-  print(StrMethodMap().mapHelper(['Привет', 'Пока', 'Русский', 'Hello']));
+  print(StrMethodMap().mapHelper([
+    'Русский',
+    'Привет',
+    'Английский',
+    'Пока',
+    'Русский',
+    'Hello',
+    'Английский'
+  ]));
   print('');
 
   print('5 Задание');
